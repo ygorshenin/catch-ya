@@ -52,11 +52,11 @@ def go(data_dir, model_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train model')
-    parser.add_argument('--input_dir',
-                        dest='input_dir',
+    parser.add_argument('--train_dir',
+                        dest='train_dir',
                         help='path to a directory with training data')
     parser.add_argument('--model_path',
                         dest='model_path',
                         help='path to a file to save model')
     args = parser.parse_args()
-    go(args.input_dir, args.model_path)
+    go(args.train_dir, args.model_path)
