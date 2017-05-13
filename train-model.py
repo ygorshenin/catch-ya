@@ -4,7 +4,7 @@ from PIL import Image
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import to_categorical
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 import argparse
 import os
 
